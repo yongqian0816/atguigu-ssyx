@@ -1,0 +1,5 @@
+spring:
+  application:
+      name: ssyx-service-acl
+  profiles:
+      active: dev
