@@ -20,4 +20,9 @@ public class BizException extends RuntimeException{
         this.code = resultCodeEnum.getCode();
         this.message = resultCodeEnum.getMessage();
     }
+
+    public BizException(ResultCodeEnum resultCodeEnum, Object... param) {
+        this.code = resultCodeEnum.getCode();
+        this.message = String.format(resultCodeEnum.getMessage(), param);
+    }
 }

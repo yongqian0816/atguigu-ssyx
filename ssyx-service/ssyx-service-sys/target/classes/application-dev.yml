@@ -1,5 +1,5 @@
 server:
-    port: 8201
+    port: 8202
 mybatis-plus:
   configuration:
       log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -7,7 +7,7 @@ spring:
     datasource:
       type: com.zaxxer.hikari.HikariDataSource
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/shequ-acl?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://localhost:3306/shequ-sys?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
       username: root
       password: 123456
     jackson:

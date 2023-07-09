@@ -25,7 +25,7 @@
         <skipTests>true</skipTests>
         <cloud.version>Hoxton.SR8</cloud.version>
         <alibaba.version>2.2.2.RELEASE</alibaba.version>
-        <mybatis-plus.version>3.4.1</mybatis-plus.version>
+        <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <mysql.version>8.0.30</mysql.version>
         <jwt.version>0.7.0</jwt.version>
         <fastjson.version>2.0.0</fastjson.version>
@@ -36,6 +36,7 @@
         <knife4j.version>2.0.8</knife4j.version>
         <jodatime.version>2.10.1</jodatime.version>
         <xxl-job.version>2.3.0</xxl-job.version>
+        <velocity-engine.version>2.0</velocity-engine.version>
     </properties>
 
     <dependencyManagement>
@@ -104,6 +105,16 @@
                 <groupId>com.xuxueli</groupId>
                 <artifactId>xxl-job-core</artifactId>
                 <version>${xxl-job.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${velocity-engine.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -1,6 +1,7 @@
 package com.atguigu.ssyx.common.result;
 
 import lombok.Data;
+import org.apache.commons.lang.ArrayUtils;
 
 /**
  * @author yong.qian
@@ -27,6 +28,13 @@ public class Result<T> {
     }
 
     public static Result fail(ResultCodeEnum resultCodeEnum) {
+        return new Result(resultCodeEnum);
+    }
+
+    public static Result fail(ResultCodeEnum resultCodeEnum, Object... param) {
+        if (ArrayUtils.isNotEmpty(param)) {
+            return new Result(resultCodeEnum.getCode(), String.format(resultCodeEnum.getMessage(), param));
+        }
         return new Result(resultCodeEnum);
     }
 

@@ -1,4 +1,4 @@
-package com.atguigu.ssyx.config;
+package com.atguigu.ssyx.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

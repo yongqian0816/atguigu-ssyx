@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>ssyx-service-acl</module>
+        <module>ssyx-service-sys</module>
     </modules>
 
     <dependencies>
